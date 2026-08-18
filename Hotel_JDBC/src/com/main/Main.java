@@ -54,7 +54,7 @@ public class Main {
 		String name1=sc.next();
 		Hotel byName = controller.getByName(name1);
 		System.out.println("GUEST_NAME :"+byName.getGuestName());
-		System.out.println("ROOM_NO :"+byName.getContactNo());
+		System.out.println("ROOM_NO :"+byName.getRoomNo());
 		System.out.println("CONTACT_NO :"+byName.getContactNo());
 		System.out.println("RESERVATION_DATE :"+byName.getReservationDate());
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -67,7 +67,7 @@ public class Main {
 		ArrayList<Hotel> allReservation = controller.getAllReservation();
 		for(Hotel h:allReservation) {
 			System.out.println("GUEST_NAME :"+h.getGuestName());
-			System.out.println("ROOM_NO :"+h.getContactNo());
+			System.out.println("ROOM_NO :"+h.getRoomNo());
 			System.out.println("CONTACT_NO :"+h.getContactNo());
 			System.out.println("RESERVATION_DATE :"+h.getReservationDate());
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
